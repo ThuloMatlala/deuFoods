@@ -3,6 +3,7 @@
   "project": {
     "name": "deu-foods-basic-site"
   },
+  
   "apps": [
     {
       "root": "src",
@@ -19,7 +20,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+          "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+          "styles.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -29,11 +31,13 @@
       }
     }
   ],
+
   "e2e": {
     "protractor": {
       "config": "./protractor.conf.js"
     }
   },
+
   "lint": [
     {
       "project": "src/tsconfig.app.json",
@@ -48,11 +52,13 @@
       "exclude": "**/node_modules/**"
     }
   ],
+
   "test": {
     "karma": {
       "config": "./karma.conf.js"
     }
   },
+
   "defaults": {
     "styleExt": "css",
     "component": {}

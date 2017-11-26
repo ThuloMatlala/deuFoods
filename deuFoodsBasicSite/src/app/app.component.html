@@ -6,16 +6,26 @@
     <span class="navbar-toggler-icon"></span>
   </button> -->
 <nav>
-  <a routerLink="/">DeuFoods</a>
-  <a routerLink="/aboutUs">About Us</a>
-  <a routerLink="/products">Products</a>
-  <a routerLink="/contactUs">Contact Us</a>
+  <ul class="nav nav-pills">
+    <li role="presentation" class="active">
+      <a routerLink="/">DeuFoods</a>
+    </li>
+    <li role="presentation">
+      <a routerLink="/aboutUs">About Us</a>
+    </li>
+    <li role="presentation">
+      <a routerLink="/products">Products</a>
+    </li>
+    <li role="presentation">
+      <a routerLink="/contactUs">Contact Us</a>
+    </li>
+  </ul>
 </nav>
 
 <!-- Body -->
+
 <body>
   <div class="container">
-    <h1>{{title}}</h1>
     <router-outlet></router-outlet>
   </div>
 </body>
@@ -30,48 +40,48 @@
 </section> -->
 
 <!-- Footer -->
-<!-- <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10 mx-auto text-center">
-          <h4>
-            <strong>Deu Foods</strong>
-          </h4>
-          <p>Plot 26 PalmietFontein
-            <br>Polokwane 0700 </p>
-          <ul class="list-unstyled">
-            <li>
-              <i class="fa fa-phone fa-fw"></i>
-              (015) 230 0002</li>
-            <li>
-              <i class="fa fa-envelope-o fa-fw"></i>
-              <a href="info@deufoods.co.za">info@deufoods.co.za</a>
-            </li>
-          </ul>
-          <br>
-          <ul class="list-inline">
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fa fa-facebook fa-fw fa-3x"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fa fa-twitter fa-fw fa-3x"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fa fa-dribbble fa-fw fa-3x"></i>
-              </a>
-            </li>
-          </ul>
-          <hr class="small">
-          <p class="text-muted">Copyright &copy; Deu Foods Website 2017</p>
-        </div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h4>
+          <strong>Deu Foods</strong>
+        </h4>
+        <p>Plot 26 PalmietFontein
+          <br>Polokwane 0700 </p>
+        <ul class="list-unstyled">
+          <li>
+            <i class="fa fa-phone fa-fw"></i>
+            (015) 230 0002</li>
+          <li>
+            <i class="fa fa-envelope-o fa-fw"></i>
+            <a href="info@deufoods.co.za">info@deufoods.co.za</a>
+          </li>
+        </ul>
+        <br>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-facebook fa-fw fa-3x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-twitter fa-fw fa-3x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-dribbble fa-fw fa-3x"></i>
+            </a>
+          </li>
+        </ul>
+        <hr class="small">
+        <p class="text-muted">Copyright &copy; Deu Foods Website 2017</p>
       </div>
     </div>
-    <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
-      <i class="fa fa-chevron-up fa-fw fa-1x"></i>
-    </a>
-  </footer> -->
+  </div>
+  <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+    <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+  </a>
+</footer>

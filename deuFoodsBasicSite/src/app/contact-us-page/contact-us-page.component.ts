@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsPageComponent implements OnInit {
 
+  title = 'Contact Us';
   constructor() { }
 
   ngOnInit() {

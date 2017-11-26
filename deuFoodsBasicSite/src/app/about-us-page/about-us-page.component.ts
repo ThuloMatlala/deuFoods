@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutUsPageComponent implements OnInit {
 
+  title = 'Bakone, About Us';
   constructor() { }
 
   ngOnInit() {

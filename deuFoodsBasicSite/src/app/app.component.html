@@ -1,83 +1,77 @@
 <!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
   <a class="navbar-brand" href="#">Deu Foods</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item-active">
-        <a class="nav-link" href="#">About Us</a>
-      </li>
-      <li class="nav-item-active">
-        <a class="nav-link" href="#">Products</a>
-      </li>
-      <li class="nav-item-active">
-        <a class="nav-link" href="#">Contact Us</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
+  </button> -->
+<nav>
+  <a routerLink="/">DeuFoods</a>
+  <a routerLink="/aboutUs">About Us</a>
+  <a routerLink="/products">Products</a>
+  <a routerLink="/contactUs">Contact Us</a>
 </nav>
 
 <!-- Body -->
 <body>
-<app-home-page></app-home-page>
+  <div class="container">
+    <h1>{{title}}</h1>
+    <router-outlet></router-outlet>
+  </div>
 </body>
 
+<!-- Map -->
+<!-- <section id="contact" class="map">
+  <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+  <br/>
+  <small>
+    <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+  </small>
+</section> -->
+
 <!-- Footer -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <h4>
-          <strong>Deu Foods</strong>
-        </h4>
-        <p>Plot 26  PalmietFontein
-          <br>Polokwane 0700 </p>
-        <ul class="list-unstyled">
-          <li>
-            <i class="fa fa-phone fa-fw"></i>
-            (015) 230 0002</li>
-          <li>
-            <i class="fa fa-envelope-o fa-fw"></i>
-            <a href="info@deufoods.co.za">info@deufoods.co.za</a>
-          </li>
-        </ul>
-        <br>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="#">
-              <i class="fa fa-facebook fa-fw fa-3x"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">
-              <i class="fa fa-twitter fa-fw fa-3x"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">
-              <i class="fa fa-dribbble fa-fw fa-3x"></i>
-            </a>
-          </li>
-        </ul>
-        <hr class="small">
-        <p class="text-muted">Copyright &copy; Deu Foods Website 2017</p>
+<!-- <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          <h4>
+            <strong>Deu Foods</strong>
+          </h4>
+          <p>Plot 26 PalmietFontein
+            <br>Polokwane 0700 </p>
+          <ul class="list-unstyled">
+            <li>
+              <i class="fa fa-phone fa-fw"></i>
+              (015) 230 0002</li>
+            <li>
+              <i class="fa fa-envelope-o fa-fw"></i>
+              <a href="info@deufoods.co.za">info@deufoods.co.za</a>
+            </li>
+          </ul>
+          <br>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-facebook fa-fw fa-3x"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-twitter fa-fw fa-3x"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-dribbble fa-fw fa-3x"></i>
+              </a>
+            </li>
+          </ul>
+          <hr class="small">
+          <p class="text-muted">Copyright &copy; Deu Foods Website 2017</p>
+        </div>
       </div>
     </div>
-  </div>
-  <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
-    <i class="fa fa-chevron-up fa-fw fa-1x"></i>
-  </a>
-</footer>
+    <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+      <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+    </a>
+  </footer> -->

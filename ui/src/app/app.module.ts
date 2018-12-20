@@ -9,6 +9,7 @@ import { ContactUsPageComponent } from './contact-us-page/contact-us-page.compon
 import { appRoutes } from '../app/app.routes';
 import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NavigationPanelComponent } from './navigation-panel/navigation-panel.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomePageComponent,
     AboutUsPageComponent,
     ProductsPageComponent,
-    ContactUsPageComponent
+    ContactUsPageComponent,
+    NavigationPanelComponent
   ],
   imports: [
     BrowserModule,

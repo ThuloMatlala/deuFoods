@@ -10,6 +10,7 @@ import { appRoutes } from '../app/app.routes';
 import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavigationPanelComponent } from './navigation-panel/navigation-panel.component';
+import { FooterPanelComponent } from './footer-panel/footer-panel.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { NavigationPanelComponent } from './navigation-panel/navigation-panel.co
     AboutUsPageComponent,
     ProductsPageComponent,
     ContactUsPageComponent,
-    NavigationPanelComponent
+    NavigationPanelComponent,
+    FooterPanelComponent
   ],
   imports: [
     BrowserModule,

@@ -14,7 +14,7 @@
 .rectangle{
     display: grid;
     height: 160px;
-    background:blue;
+    background:greenyellow;
 }
 
 .row{

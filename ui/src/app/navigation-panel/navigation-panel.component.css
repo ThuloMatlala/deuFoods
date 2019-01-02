@@ -1,7 +1,3 @@
-.row{
-    width: 100%;
-}
-
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -15,14 +11,43 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-.header {
-    background-color: white;
-    color: #B61010;
-    padding: 15px;
-    font-size: 18px;
-  }
+.rectangle{
+    display: grid;
+    height: 180px;
+    background:blue;
+}
 
-  .logo{
-      max-width: 180px;
-      max-height: 180px;
-  }
+.row{
+    height:40px;
+    background: white;
+    align-self: center;
+}
+
+.block1{
+    background: green;
+    height: 40px;
+}
+
+.block2{
+    background: yellow;
+    height: 40px;
+}
+.block3{
+    background: red;
+    height: 40px;
+}
+.block4{
+    background: white;
+    height: 40px;
+}
+.block5{
+    background: pink;
+    height: 40px;
+}
+
+.rectangle2{
+    display: grid;
+    background:red;
+    padding: 1em;
+}
+    

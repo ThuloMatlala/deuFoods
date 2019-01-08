@@ -11,6 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavigationPanelComponent } from './navigation-panel/navigation-panel.component';
 import { FooterPanelComponent } from './footer-panel/footer-panel.component';
+import { ContentPanelComponent } from './content-panel/content-panel.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { FooterPanelComponent } from './footer-panel/footer-panel.component';
     ProductsPageComponent,
     ContactUsPageComponent,
     NavigationPanelComponent,
-    FooterPanelComponent
+    FooterPanelComponent,
+    ContentPanelComponent
   ],
   imports: [
     BrowserModule,
